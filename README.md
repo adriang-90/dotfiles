@@ -1,0 +1,3 @@
+# This is repo with my private dotfiles that I use in my day to day setup.
+
+Still in progress....

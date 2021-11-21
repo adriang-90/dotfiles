@@ -2,6 +2,10 @@ syntax enable
 filetype plugin indent on
 
 set number
+# change working directory to the directory of your working file
+set autochdir
+
+set rules
 
 "disable arrow keys"
 noremap <up> :echoerr "Umm, use k instead"<CR>

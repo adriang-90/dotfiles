@@ -146,8 +146,8 @@ alias commits="git commit -S -m"
 alias c="clear"
 alias status="git status"
 alias commit="git commit -m"
-alias rmi="cd /home/babel/gh_repos/scripts/docker && ./removei.sh"
-alias rmc="cd /home/babel/gh_repos/scripts/docker && ./stopc_removec.sh"
+alias rmi="/home/babel/gh_repos/scripts/docker/removei.sh"
+alias rmc="/home/babel/gh_repos/scripts/docker/stopc_removec.sh"
 alias discord="discord --ignore-gpu-blocklist --disable-features=UseOzonePlatform --enable-features=VaapiVideoDecoder --use-gl=desktop --enable-gpu-rasterization --enable-zero-copy --no-sandbox"
 set -o vi
 

@@ -137,13 +137,32 @@ function __prompt {
 __prompt
 unset __prompt
 
-alias ls='ls --color=auto'
+# Aliases
+alias zets='cd /home/babel/gh_repos/zettelsss'
+alias ls='ls -h --color=auto'
 alias tmux="tmux -2"
-export PATH=$PATH:$HOME/bin
+alias add="git add"
+alias commits="git commit -S -m"
 alias c="clear"
-force_color_prompt=yes
+alias status="git status"
+alias commit="git commit -m"
+alias rmi="cd /home/babel/gh_repos/scripts/docker && ./removei.sh"
+alias rmc="cd /home/babel/gh_repos/scripts/docker && ./stopc_removec.sh"
+alias discord="discord --ignore-gpu-blocklist --disable-features=UseOzonePlatform --enable-features=VaapiVideoDecoder --use-gl=desktop --enable-gpu-rasterization --enable-zero-copy --no-sandbox"
 set -o vi
+
+#PATHS
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
+export GO111MODULE=on
+export CLOUDSDK_PYTHON=python2
 
 alias mkz="mkdir $(date -u +%Y%m%d%H%M%S "$@") \
   && cd "$@" "
 
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/babel/google-cloud-sdk/path.bash.inc' ]; then . '/home/babel/google-cloud-sdk/path.bash.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/home/babel/google-cloud-sdk/completion.bash.inc' ]; then . '/home/babel/google-cloud-sdk/completion.bash.inc'; fi

@@ -1,0 +1,2 @@
+# binds Ctrl+f to fzf
+bind -x '"\C-f":"fzf"'

@@ -149,7 +149,12 @@ alias commit="git commit -m"
 alias rmi="/home/babel/gh_repos/scripts/docker/removei.sh"
 alias rmc="/home/babel/gh_repos/scripts/docker/stopc_removec.sh"
 alias discord="discord --ignore-gpu-blocklist --disable-features=UseOzonePlatform --enable-features=VaapiVideoDecoder --use-gl=desktop --enable-gpu-rasterization --enable-zero-copy --no-sandbox"
+alias db="docker build"
 set -o vi
+alias gomodpdf="go mod graph | modgv | dot -Tps2 -o graph.ps && ps2pdf graph.ps graph.pdf"
+alias pl_kb="setxkbmap -layout pl"
+alias zombies="ps -eo pid,ppid,cmd,%mem,%cpu --sort=-%mem | head"
+alias hidden_bear="du -hsx * | sort -rh | head -10"
 
 #PATHS
 export GOPATH=$HOME/go
@@ -166,3 +171,9 @@ if [ -f '/home/babel/google-cloud-sdk/path.bash.inc' ]; then . '/home/babel/goog
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/home/babel/google-cloud-sdk/completion.bash.inc' ]; then . '/home/babel/google-cloud-sdk/completion.bash.inc'; fi
+
+# Export for signing commits
+export GPG_TTY=$(tty)
+bind -x '"\C-f":"fzf"'
+alias k=kubectl
+complete -o default -F __start_kubectl k

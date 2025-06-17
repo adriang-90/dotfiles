@@ -4,7 +4,7 @@ set -e
 
 # 1. Install packages
 echo "Installing zsh, tmux, neovim, git, wget, curl, and nerd fonts..."
-sudo pacman -Syu --noconfirm zsh tmux neovim git wget curl ttf-hack-nerd
+sudo pacman -Syu --noconfirm zsh tmux neovim git wget curl ttf-hack-nerd xclip
 
 # 2. Install Oh My Zsh
 if [ ! -d "$HOME/.oh-my-zsh" ]; then

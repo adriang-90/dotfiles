@@ -37,3 +37,4 @@ nnoremap <C-s> :w<CR>
 inoremap <C-s> <Esc>:w<CR>a
 colorscheme gruvbox
 
+nnoremap <C-f> :FZF<CR>

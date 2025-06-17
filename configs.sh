@@ -6,7 +6,7 @@ cp ~/.config/nvim/init.vim .
 cp ~/.tmux.conf .
 
 # Add files to git
-git add zshrc init.vim tmux.conf
+git add .
 
 # Commit with a message (you can change the message)
 git commit -m "Backup: zsh, nvim, and tmux config files"

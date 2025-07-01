@@ -114,3 +114,4 @@ source $ZSH/oh-my-zsh.sh
   export TERM="screen-256color"
   # You can customize prompt or other settings here
 fi
+set -o vi  # Enable vi mode in the shell   
